@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import BtnWeHelp from '../buttons/WeHelp';
+import CommentList from '../cards/CommentList';
+import { comments } from '../../comments';
 import './Reviews.css';
 
 export default class Reviews extends Component {
@@ -7,8 +8,14 @@ export default class Reviews extends Component {
     return (
       <div>
       	<div className="top-triangle" />
-				<section className="reviews">
-				</section>
+				<div className="reviews">
+          <section className="container">
+            <div className="row justify-content-center">
+              <h2 className="custom-yellow mt-5 mb-5 text-center">Nuestros clientes nos recomiendan</h2>
+            </div>
+            <CommentList comments={ comments }/>
+          </section>
+				</div>
 				<div className="bottom-triangle" />
       </div>
     );
