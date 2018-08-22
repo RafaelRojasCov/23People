@@ -50,13 +50,13 @@ export default class Menu extends Component {
   		this.nav.current.classList.remove("navbar-transparent")
   		this.nav.current.classList.add("navbar-light")
   		this.nav.current.classList.remove("navbar-dark")
-  		this.nav.current.style.transition = "background-color 1s ease";
+  		this.nav.current.style.transition = "background-color 0.8s ease";
   	} else if (window.scrollY < 10 && !isMobile()) {
   		this.nav.current.classList.add("navbar-transparent")
 			this.nav.current.classList.remove("navbar-not-transparent")
 			this.nav.current.classList.add("navbar-dark")
 			this.nav.current.classList.remove("navbar-light")
-			this.nav.current.style.transition = "background-color 1s ease";
+			this.nav.current.style.transition = "background-color 0.8s ease";
   	}
   }
 

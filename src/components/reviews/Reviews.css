@@ -1,0 +1,22 @@
+.reviews {
+	height: 768px;
+	background-color: white;
+}
+
+.top-triangle {
+	width: 100%;
+  height: 80px;
+  background: white;
+  -webkit-clip-path: polygon(100% 0, 0 100%, 100% 99%);
+  clip-path: polygon(100% 0, 0 100%, 100% 99%);
+  margin-top: -90px;
+  margin-bottom: -1px;
+}
+
+.bottom-triangle {
+	width: 100%;
+  height: 80px;
+  background: white;
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+}
