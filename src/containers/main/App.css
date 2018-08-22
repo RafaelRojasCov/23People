@@ -2,6 +2,9 @@
 	color: #fac450;
 }
 
+body{
+	margin-bottom: -8px;
+}
 /*
 Hace girar lentamente como reloj
 .App-logo {

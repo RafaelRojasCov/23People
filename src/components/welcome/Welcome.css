@@ -1,6 +1,7 @@
 #welcomeVideo {
 	position: fixed;
 	bottom:0;
+	margin-bottom:0;
 	right: 0;
 	min-height: 100%;
 	min-width: 100%;

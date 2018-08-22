@@ -8,8 +8,7 @@ export default class Welcome extends Component {
     return (
       <div>
       	<video id="welcomeVideo" loop="true" autoPlay="autoPlay" muted>
-				  <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4" />
-				  <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv" type="video/ogg" />
+				  <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4" />
 				  Tu navegador no soporte video en HTML5.
 				</video>
 				<header className="header">
