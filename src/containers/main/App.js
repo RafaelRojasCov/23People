@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Menu from '../../components/menu/Menu';
 import Welcome from '../../components/welcome/Welcome';
+import Menu from '../../components/menu/Menu';
 import './App.css';
 
 export default class App extends Component {

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import BtnWeHelp from '../buttons/WeHelp';
+import BtnServices from '../buttons/Services';
 import './Welcome.css';
 
 export default class Welcome extends Component {
@@ -6,10 +8,9 @@ export default class Welcome extends Component {
     return (
       <div>
       	<video id="welcomeVideo" loop="true" autoPlay="autoPlay" muted>
-				  <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4" />
+				  <source src="https://www.w3schools.com/howto/rain.mp4 " type="video/mp4" />
 				  Tu navegador no soporte video en HTML5.
 				</video>
-
 				<header className="header">
 					<div className="container">
 					
@@ -30,9 +31,11 @@ export default class Welcome extends Component {
 						</div>
 
 						<div className="row">
-							<div className="col">
-								<button className="btn btn-warning">Nosotros te ayudamos</button>
-								<button className="btn btn-warning">Conoce nuestros servicios</button>
+							<div className="col-lg-3 col-sm-6 col-xs-12">
+								<BtnWeHelp />
+							</div>
+							<div className="col-lg-3 col-sm-6 col-xs-12">
+								<BtnServices />
 							</div>
 						</div>
 

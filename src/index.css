@@ -2,5 +2,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: url("https://i1.wp.com/i.pinimg.com/originals/85/a6/3d/85a63d38b79cf83a40c227027e2631b1.jpg?resize=1060%2C596&ssl=1");
+}
+
+.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
 }
