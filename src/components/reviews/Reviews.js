@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import CommentList from '../cards/CommentList';
-import { comments } from '../../comments';
+import CommentList from './CommentList';
+import { comments } from './commentsData';
 import './Reviews.css';
 
 export default class Reviews extends Component {

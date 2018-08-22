@@ -7,9 +7,11 @@ export default class Welcome extends Component {
   render() {
     return (
       <div>
-      	<video id="welcomeVideo" loop="true" autoPlay="autoPlay" muted>
-				  <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4" />
-				  Tu navegador no soporte video en HTML5.
+				<video id="welcomeVideo" loop="true" autoPlay="autoPlay" muted>
+			    <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4" />
+			    <img 
+			    	src="https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" 
+			    	title="Tu navegador no soporta video en HTML5" />
 				</video>
 				<header className="header">
 					<div className="container">
