@@ -14,6 +14,7 @@ const CommentList = ({ comments }) => {
 								message={comment.message} 
 								logo={comment.logo}
 								position={comment.position}
+								alt={comment.alt}
 							/>
 					})
 				}

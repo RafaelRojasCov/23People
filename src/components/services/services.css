@@ -1,0 +1,22 @@
+@media (min-width: 992px){
+	.card-service {
+		color: white;
+		max-width: 50%;
+	  min-height: 384px;
+	  background-size: cover;
+	  background-position: bottom;
+	  padding: 3em;
+	}
+}
+
+@media (max-width: 991px){
+	.card-service {
+		color: white;
+		width: 100%;
+	  min-height: 384px;
+	  background-size: cover;
+	  background-position: bottom;
+	  padding: 2em;
+	}
+}
+
