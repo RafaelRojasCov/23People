@@ -4,15 +4,20 @@ import styled from 'styled-components';
 
 const StyledCard = styled.div`
 	max-width: 300px;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
   padding: 1em;
   border: 0;
 `;
 const StyledMessage = styled.p`
-  min-height: 300px;
+  min-height: 200px;
 `;
 
 const StyledLogo = styled.img`
-	width: 100%;
+	max-width: 80%;
 `;
 
 const StyledName = styled.h1`
@@ -26,12 +31,14 @@ const StyledPosition = styled.h1`
 const Comment = ({ id, message, logo, name, position, alt }) => {
 
 	return(
-		<div className="col-lg col-sm-6 col-xs-12">
-			<StyledCard className="text-center mx-auto">
+		<div className="mx-auto col-lg col-sm-6 col-xs-12">
+			<StyledCard className="mx-auto text-center">
 				<StyledMessage>{message}</StyledMessage>
-				<StyledLogo className="mb-3 mt-5" alt={alt} src={logo}/>
-				<StyledName>{name}</StyledName>
-				<StyledPosition>{position}</StyledPosition>
+				<div>
+					<StyledLogo className="mb-3 mt-5" alt={alt} src={logo}/>
+					<StyledName>{name}</StyledName>
+					<StyledPosition>{position}</StyledPosition>
+				</div>
 			</StyledCard>
 		</div>
 	);
