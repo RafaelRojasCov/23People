@@ -5,9 +5,9 @@ import styled from 'styled-components';
 const Link = styled.a`
 	min-height: 100%;
 	display: flex;
-	max-width: 300px;
+	max-width: 350px;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: space-around;
 	align-items: center;
 	padding: 2em 1em 1em 1em;
 	border-radius: .4em;
@@ -23,6 +23,7 @@ const Link = styled.a`
 
 const StyledLogo = styled.img`
 	max-width: 80%;
+	max-height: 80px;
 `;
 
 const StyledDescription = styled.p`
