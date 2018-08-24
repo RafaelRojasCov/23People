@@ -12,7 +12,7 @@ const Link = styled.a`
 	padding: 2em 1em 1em 1em;
 	border-radius: .4em;
 	border: 0;
-	margin: 1em auto 1em auto;
+	margin: .5em auto .5em auto;
 
 	&:hover {
 		transition: background-color 0.4s ease;
@@ -35,7 +35,7 @@ const StyledDescription = styled.p`
 const Activity = ({ id, logo, description, url, name, title }) => {
 
 	return(
-		<Link href={ url }>
+		<Link className="col-sm-6 col-md-4" href={ url }>
 			<StyledLogo src={ logo } alt={ name } />
 			<StyledDescription> <h5>{ title }</h5> { description }</StyledDescription>
 		</Link>
