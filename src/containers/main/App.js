@@ -4,6 +4,7 @@ import Welcome from '../../components/welcome/Welcome';
 import Reviews from '../../components/reviews/Reviews';
 import Services from '../../components/services/Services';
 import Introduction from '../../components/services/Introduction';
+import Activities from '../../components/activities/Activities';
 import './App.css';
 
 export default class App extends Component {
@@ -15,6 +16,7 @@ export default class App extends Component {
         <Reviews />
         <Introduction />
         <Services />
+        <Activities />
       </div>
     );
   }
