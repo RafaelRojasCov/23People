@@ -22,6 +22,7 @@ const ActivityList = ({ activities }) => {
 								description={activity.description} 
 								url={activity.url}
 								name={activity.name}
+								title={activity.title}
 							/>
 					})
 				}

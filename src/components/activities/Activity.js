@@ -9,7 +9,7 @@ const Link = styled.a`
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	padding: .2em 1em;
+	padding: 2em 1em 1em 1em;
 	border-radius: .4em;
 	border: 0;
 	margin: 1em auto 1em auto;
@@ -22,22 +22,21 @@ const Link = styled.a`
 `;
 
 const StyledLogo = styled.img`
-	margin-top: 1em;
 	max-width: 80%;
 `;
 
-const StyledDescription = styled.div`
+const StyledDescription = styled.p`
 	color:white;
-	min-height: 150px;
+	font-size: .9em;
 	margin-top: 2em;
 `;
 
-const Activity = ({ id, logo, description, url, name }) => {
+const Activity = ({ id, logo, description, url, name, title }) => {
 
 	return(
 		<Link href={ url }>
 			<StyledLogo src={ logo } alt={ name } />
-			<StyledDescription>{ description }</StyledDescription>
+			<StyledDescription> <h5>{ title }</h5> { description }</StyledDescription>
 		</Link>
 	);
 
