@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const StyledBackgroundBox = styled.div`
 	color: white;
-	min-height: 700px;
+	min-height: 750px;
 	min-width: 100%;
 	background-color: #3e474f;
 	background-image: url(https://i.imgur.com/fNzYJNF.png);
