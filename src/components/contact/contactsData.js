@@ -16,7 +16,7 @@ export const contacts = [
     name: 'Jorge Perez'
   },
   {
-    id: 2,
+    id: 3,
     title: 'Comentarios y sugerencias',
     phone: "+56 2 3245 1454",
     mail: 'hablemos@23people.io',

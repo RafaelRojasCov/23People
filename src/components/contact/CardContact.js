@@ -22,7 +22,7 @@ const StyledCard = styled.div`
 
 const StyledPhoto = styled.img`
 	width: 100px;
-	height: 100px;
+	height: ${props => props.src ? '100px' : '0px'};
 	object-fit: cover;
 	border-radius: .4em;
 	border: 0;
