@@ -6,6 +6,7 @@ import Services from '../../components/services/Services';
 import Introduction from '../../components/services/Introduction';
 import Activities from '../../components/activities/Activities';
 import Contact from '../../components/contact/Contact';
+import Footer from '../../components/footer/Footer';
 import './App.css';
 
 export default class App extends Component {
@@ -19,6 +20,7 @@ export default class App extends Component {
         <Services />
         <Activities />
         <Contact />
+        <Footer />
       </div>
     );
   }
