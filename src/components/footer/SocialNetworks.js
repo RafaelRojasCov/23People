@@ -29,21 +29,16 @@ const StyledIcons = styled.div`
 	justify-content: space-around;
 `;
 
-const StyledList = styled.ul`
-	list-style-type: none;
-	padding-left: 0;
-`;
-
 
 const SocialNetworks = () => {
 	return(
 		<BoxContent>
 			<h4 className="text-center">Contacto</h4>
 			<StyledIcons>
-				<StyledLink href="https://www.facebook.com/23people"><FontAwesomeIcon icon={faFacebook} /></StyledLink>
-				<StyledLink href="https://www.twitter.com/23people"><FontAwesomeIcon icon={faTwitter} /></StyledLink>
-				<StyledLink href="mailto:contacto@23people.io"><FontAwesomeIcon icon={faEnvelope} /></StyledLink>
-				<StyledLink href="https://www.23people.io/aboutus"><FontAwesomeIcon icon={faPhoneSquare} /></StyledLink>
+				<StyledLink href="https://www.facebook.com/23people" target="_blank" rel="noopener noreferrer" ><FontAwesomeIcon icon={faFacebook} /></StyledLink>
+				<StyledLink href="https://www.twitter.com/23people" target="_blank" rel="noopener noreferrer" ><FontAwesomeIcon icon={faTwitter} /></StyledLink>
+				<StyledLink href="mailto:contacto@23people.io" target="_blank" rel="noopener noreferrer" ><FontAwesomeIcon icon={faEnvelope} /></StyledLink>
+				<StyledLink href="https://www.23people.io/aboutus" target="_blank" rel="noopener noreferrer" ><FontAwesomeIcon icon={faPhoneSquare} /></StyledLink>
 			</StyledIcons>
 		</BoxContent>
 	);

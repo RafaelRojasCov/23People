@@ -7,6 +7,7 @@ const StyledBox = styled.p`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	font-size: .8em;
 `;
 
 

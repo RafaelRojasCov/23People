@@ -9,7 +9,6 @@ import Copyright from './Copyright';
 const StyledFooter = styled.div`
 	padding-top: 1em;
 	min-height: 250px;
-	width: 100%;
 	height: 100%;
 	background-color: #fac450;
 	display: flex;

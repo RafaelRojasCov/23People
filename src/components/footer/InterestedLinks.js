@@ -32,10 +32,10 @@ const InterestedLinks = () => {
 		<BoxLinks>
 			<h4 className="text-center">Links de interés</h4>
 			<StyledList>
-				<li><StyledLink href="https://www.getonbrd.cl/23people">Trabaja con nosotros</StyledLink></li>
-				<li><StyledLink href="https://www.medium.com/blog/23people">Blog 23People</StyledLink></li>
-				<li><StyledLink href="https://www.facebook.com/23people">Noticias</StyledLink></li>
-				<li><StyledLink href="https://www.23people.io/aboutus">Acerca de nosotros</StyledLink></li>
+				<li><StyledLink href="https://www.getonbrd.cl/23people" target="_blank" rel="noopener noreferrer">Trabaja con nosotros</StyledLink></li>
+				<li><StyledLink href="https://www.medium.com/blog/23people" target="_blank" rel="noopener noreferrer">Blog 23People</StyledLink></li>
+				<li><StyledLink href="https://www.facebook.com/23people" target="_blank" rel="noopener noreferrer">Noticias</StyledLink></li>
+				<li><StyledLink href="https://www.23people.io/aboutus" target="_blank" rel="noopener noreferrer">Acerca de nosotros</StyledLink></li>
 			</StyledList>
 		</BoxLinks>
 	);

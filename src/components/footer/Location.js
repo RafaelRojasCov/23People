@@ -26,7 +26,7 @@ const Location = () => {
 	return(
 		<BoxContent className="text-center">
 			<h4>Ubicación</h4>
-			<StyledLink href="https://bit.ly/2MSZ7cY">Román Díaz 445, Providencia. <br />Santiago, Chile.</StyledLink>
+			<StyledLink href="https://bit.ly/2MSZ7cY" target="_blank" rel="noopener noreferrer">Román Díaz 445, Providencia. <br />Santiago, Chile.</StyledLink>
 		</BoxContent>
 	);
 }

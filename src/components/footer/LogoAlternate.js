@@ -14,7 +14,7 @@ const StyledLogo = styled.div`
 const LogoAlternate = () => {
 	return(
 		<StyledLogo>
-			<a href="https://www.23people.io/"><img src="https://i.imgur.com/FBRIJmn.png" alt="logo-alternate" /></a>
+			<a href="https://www.23people.io/" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/8sMU5aD.png" alt="logo-alternate" /></a>
 		</StyledLogo>
 	);
 }
