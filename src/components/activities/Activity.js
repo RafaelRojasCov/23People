@@ -26,7 +26,7 @@ const StyledLogo = styled.img`
 	max-height: 80px;
 `;
 
-const StyledDescription = styled.p`
+const StyledDescription = styled.div`
 	color:white;
 	font-size: .9em;
 	margin-top: 2em;
@@ -37,7 +37,7 @@ const Activity = ({ id, logo, description, url, name, title }) => {
 	return(
 		<Link className="col-sm-6 col-md-4" href={ url }>
 			<StyledLogo src={ logo } alt={ name } />
-			<StyledDescription> <h5>{ title }</h5> { description }</StyledDescription>
+			<StyledDescription> <h5>{ title }</h5> <p>{ description }</p></StyledDescription>
 		</Link>
 	);
 

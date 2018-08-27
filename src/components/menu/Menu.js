@@ -4,6 +4,7 @@ import Logo from './Logo.png';
 import './Menu.css';
 
 let topScroll = 10;
+let isDropped = false;
 
 const isMobile = () => {
 	if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) 
@@ -12,7 +13,7 @@ const isMobile = () => {
 	}
 	return false;
 }
-		
+
 
 export default class Menu extends Component {
 	constructor(props){
@@ -30,33 +31,47 @@ export default class Menu extends Component {
     window.removeEventListener('load', this.handleDevice);
   }
 
+  setBackgroundWhite(){
+		this.nav.current.classList.add("navbar-not-transparent");
+		this.nav.current.classList.remove("navbar-transparent");
+		this.nav.current.classList.add("navbar-light");
+		this.nav.current.classList.remove("navbar-dark");
+		this.nav.current.style.transition = "background-color 0.8s ease";
+	}
+
+	setBackgroundTransparent(){
+		this.nav.current.classList.add("navbar-transparent")
+		this.nav.current.classList.remove("navbar-not-transparent")
+		this.nav.current.classList.add("navbar-dark")
+		this.nav.current.classList.remove("navbar-light")
+		this.nav.current.style.transition = "background-color 0.8s ease";
+	}
+
+	handleBackground = () => {
+		if (isDropped && window.scrollY < 10 && !isMobile()){
+			this.setBackgroundTransparent();
+			isDropped = false;
+		} else if (isDropped && window.scrollY > 10 && !isMobile()){
+			isDropped = false;
+		} else {
+			this.setBackgroundWhite();
+			isDropped = true;
+		}
+	}
+
   handleDevice = () => {
   	if (!isMobile()){
-  		this.nav.current.classList.add("navbar-transparent")
-			this.nav.current.classList.remove("navbar-not-transparent")
-			this.nav.current.classList.add("navbar-dark")
-			this.nav.current.classList.remove("navbar-light")
+  		this.setBackgroundTransparent();
   	} else {
-  		this.nav.current.classList.add("navbar-not-transparent")
-  		this.nav.current.classList.remove("navbar-transparent")
-  		this.nav.current.classList.add("navbar-light")
-  		this.nav.current.classList.remove("navbar-dark")
+  		this.setBackgroundWhite();
   	}
   }
 
   handleScroll = () => {
   	if ( window.scrollY > topScroll ){
-  		this.nav.current.classList.add("navbar-not-transparent")
-  		this.nav.current.classList.remove("navbar-transparent")
-  		this.nav.current.classList.add("navbar-light")
-  		this.nav.current.classList.remove("navbar-dark")
-  		this.nav.current.style.transition = "background-color 0.8s ease";
-  	} else if (window.scrollY < 10 && !isMobile()) {
-  		this.nav.current.classList.add("navbar-transparent")
-			this.nav.current.classList.remove("navbar-not-transparent")
-			this.nav.current.classList.add("navbar-dark")
-			this.nav.current.classList.remove("navbar-light")
-			this.nav.current.style.transition = "background-color 0.8s ease";
+  		this.setBackgroundWhite();
+  	} else if (!isDropped && window.scrollY < 10 && !isMobile()) {
+  		this.setBackgroundTransparent();
   	}
   }
 
@@ -66,11 +81,11 @@ export default class Menu extends Component {
       <div>
       	<nav ref={this.nav} className="navbar navbar-expand-lg fixed-top navbar-dark navbar-transparent">
 	      	<div className="container">
-	          <a className="navbar-brand" href="https://www.23people.io">
+	          <a className="navbar-brand" href="/">
 	          	<img className="d-inline-block align-top" src={Logo} alt="23People"/>
 	          </a>
 
-	          <button className="navbar-toggler" type="button" 
+	          <button onClick={this.handleBackground} className="navbar-toggler" type="button" 
 	          				data-toggle="collapse" data-target="#navbarNavDropdown" 
 	          				aria-controls="navbarNavDropdown" aria-expanded="false" 
 	          				aria-label="Toggle navigation">
@@ -79,14 +94,14 @@ export default class Menu extends Component {
 
 					  <div className="collapse navbar-collapse ml-auto w-100 justify-content-end" id="navbarNavDropdown">
 					    <ul className="navbar-nav">
-					      <li className="nav-item active">
-					        <a className="nav-link" href="https://www.23people.io/">Inicio <span className="sr-only">(current)</span></a>
+					      <li className="nav-item">
+					        <a className="nav-link" href="/">Inicio <span className="sr-only">(current)</span></a>
 					      </li>
 					      <li className="nav-item">
 					        <a className="nav-link" href="https://www.23people.io/">Servicios</a>
 					      </li>
 					      <li className="nav-item">
-					        <a className="nav-link" href="https://www.23people.io/">Casos de éxito</a>
+					        <a className="nav-link" href="/successfull-cases">Casos de éxito</a>
 					      </li>
 					      <li className="nav-item">
 					        <a className="nav-link" href="https://www.23people.io/">Historia</a>

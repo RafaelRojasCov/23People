@@ -13,9 +13,9 @@ export default class BtnHiring extends Component {
 
 	render(){
 		return(
-			<StyledHiring className="btn btn-sm btn-warning">
+			<a href="https://www.getonbrd.cl/companies/23people-cl/" target="_blank" rel="noopener noreferrer"><StyledHiring className="btn btn-sm btn-warning">
 				Estamos contratando
-			</StyledHiring>
+			</StyledHiring></a>
 		);
 	}
 
