@@ -1,0 +1,13 @@
+@media only screen and (min-width: 1170px){
+ .vertical-timeline-element-content {
+ 	width: 44%;
+ }
+}
+
+.vertical-timeline-element-icon {
+	padding-left: .4em;
+}
+
+.vertical-timeline--animate .vertical-timeline-element-content.is-hidden {
+    display: block !important;
+}

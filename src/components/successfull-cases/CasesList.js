@@ -5,7 +5,7 @@ import { cases } from './casesData';
 export default class CasesList extends Component {
 	render(){
 		return(
-			<div className="container px-4 py-4">
+			<div className="container mb-5 mt-5">
 				<div>
 				{
 					cases.map(( item, i ) => {
