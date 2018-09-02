@@ -104,6 +104,9 @@ export default class Menu extends Component {
 					        <a className="nav-link" href="/successfull-cases">Casos de éxito</a>
 					      </li>
 					      <li className="nav-item">
+					        <a className="nav-link" href="/markets">Mercados & Clientes</a>
+					      </li>
+					      <li className="nav-item">
 					        <a className="nav-link" href="/aboutus">Historia</a>
 					      </li>
 					      <li className="nav-item">

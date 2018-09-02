@@ -47,10 +47,10 @@ const CardContact = ({ id, title, phone, mail, photo, name }) => {
 
 	return(
 		<StyledCard className="col-md-6">
-			<StyledPhoto src={photo} alt="" />
+			<StyledPhoto src={photo} alt={name} />
 			<h5 className="mb-2 text-center"><strong>{title}</strong></h5>
-			<StyledPhone className="custom-blue" href={ "tel:" + phone}>{phone}</StyledPhone>
-			<StyledEmail className="custom-blue" href={ "mailto:" + mail}>{mail}</StyledEmail>
+			<StyledPhone className="custom-blue" href={ `tel: ${phone}`}>{phone}</StyledPhone>
+			<StyledEmail className="custom-blue" href={ `mailto: ${mail}`}>{mail}</StyledEmail>
 			<span>{name}</span>
 		</StyledCard>
 	);

@@ -16,7 +16,7 @@ export default class PageDescription extends Component {
 	render(){
 		const { title, content } = this.props;
 		return(
-			<div className="container">
+			<div className="container custom-blue">
 				<StyledBox>
 					<h3 className="text-center mt-3 mb-5"> { title }</h3>
 					<p>{ content }</p>

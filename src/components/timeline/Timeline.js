@@ -11,7 +11,7 @@ export default class Timeline extends Component {
     return (
       <div className="container">
 
-      	<VerticalTimeline animate={false}>
+      	<VerticalTimeline>
 
       		{
 					data.map(( el, i ) => {
