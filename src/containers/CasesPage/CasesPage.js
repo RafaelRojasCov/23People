@@ -13,7 +13,7 @@ const StyledPage = styled.div`
 
 const message = 'A los grandes desafíos, grandes resultados:';
 const highlight = 'Proyectos realizados';
-const background = 'linear-gradient(rgba(50,50,50,.85),rgba(50,50,50,.3)),url(https://i.imgur.com/86qYcXo.jpg)';
+const background = 'linear-gradient(rgba(20,20,20,.85),rgba(25,25,25,.3)),url(https://i.imgur.com/awIFJiY.jpg)';
 
 export default class CasesPage extends Component {
   render() {

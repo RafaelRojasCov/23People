@@ -11,7 +11,7 @@ const StyledPage = styled.div`
   background-color: #f5f5f5;
 `;
 
-export default class ServicesPage extends Component {
+export default class MarketsPage extends Component {
   render() {
     return (
       <StyledPage>
