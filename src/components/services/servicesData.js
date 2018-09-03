@@ -24,7 +24,7 @@ export const services = [
     id: 4,
     title: 'Equipo de Trabajo',
     description: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
-    url: 'https://www.23people.io/Titulo4',
+    url: '/team',
     background: 'linear-gradient(rgba(64,86,117,.85),rgba(64,86,117,.85)),url(https://i.imgur.com/zqH7O8j.jpg)'
   }
 ];
