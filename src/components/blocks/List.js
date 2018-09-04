@@ -9,19 +9,19 @@ const StyledList = styled.div`
 	flex-wrap: wrap;
 `;
 
-const CardList = ({ services }) => {
+const List = ({ information }) => {
 
 		return(
 			<StyledList>
 				{
-					services.map(( service, i ) => {
+					information.map(( el, i ) => {
 							return <Card
 									key={i}
-									id={service.id} 
-									title={service.title} 
-									description={service.description} 
-									url={service.url}
-									background={service.background}
+									id={el.id} 
+									title={el.title} 
+									description={el.description} 
+									url={el.url}
+									background={el.background}
 								/>
 						})
 				}
@@ -30,4 +30,4 @@ const CardList = ({ services }) => {
 
 }
 
-export default CardList;
+export default List;

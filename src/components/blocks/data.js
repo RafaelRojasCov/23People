@@ -1,4 +1,4 @@
-export const services = [
+export const data = [
   {
     id: 1,
     title: 'Mercados e industrias',
@@ -10,7 +10,7 @@ export const services = [
     id: 2,
     title: 'Tecnologías',
     description: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
-    url: 'https://www.23people.io/Titulo2',
+    url: '/tecnologias',
     background: 'linear-gradient(rgba(247,197,96,.85),rgba(247,197,96,.85)),url(https://i.imgur.com/icR6rRG.jpg)'
   },
   {

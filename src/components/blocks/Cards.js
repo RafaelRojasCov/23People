@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import './services.css';
+import './style.css';
 
 const StyledCard = styled.div`
 	display:flex;

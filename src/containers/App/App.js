@@ -17,6 +17,7 @@ export default class App extends Component {
 	      <Route path='/aboutus' component={HistoryPage}/>
 	      <Route path='/markets' component={MarketsPage}/>
         <Route path='/services' component={ServicesPage}/>
+        <Route path='/tecnologias' component={ServicesPage}/>
 	      <Route path='/team' component={TeamPage}/>
       </div>
     );
