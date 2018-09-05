@@ -16,7 +16,7 @@ const StyledSVG = styled.img`
 
 const content = 'Nuestra mayor habilidad son las infinitas ganas de intentar nuevos desafíos desarrollando software a diario y los años de experiencia que posee nuestro equipo nos permiten certificar calidad, compromiso y cumplimiento de KPIs y espectativas.'
 
-const src = 'https://svgur.com/i/8A0.svg';
+const src = 'https://svgur.com/i/8AP.svg';
 
 
 export default class Technologies extends Component {
