@@ -2,7 +2,7 @@
   "name": "23people",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://23people.github.io/"
+  "homepage": "https://rafaelrojascov.github.io/23People/"
   "dependencies": {
     "@fortawesome/fontawesome-free-brands": "^5.0.13",
     "@fortawesome/fontawesome-free-regular": "^5.0.13",
