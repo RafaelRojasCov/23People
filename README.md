@@ -1,7 +1,15 @@
 # 23People.io
 
-Sitio web desarrollado para la empresa 23People según los requerimientos solicitados.
+Proyecto web desarrollado para la empresa 23People según los requerimientos solicitados.
+La aplicación fue creada con create-react-app y cuenta con las siguientes dependencias:
 
+- @fortawesome (Font awesome for react)
+- styled components (css-in-js)
+- Bootstrap 4
+- react-vertical-timeline 
+- Entre otros...
+
+Para mayor información revisar el archivo package.json en el apartado dependencias.
 
 ## Pre-requisitos
 
