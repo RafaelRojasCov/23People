@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Menu from '../../components/menu/Menu';
-import Contact from '../../components/contact/Contact';
-import Header from '../../components/header/Header';
-import Footer from '../../components/footer/Footer';
-import Timeline from '../../components/timeline/Timeline';
-import PageDescription from '../../components/subpage-description/PageDescription';
+import Menu from 'components/menu/Menu';
+import Contact from 'components/contact/Contact';
+import Header from 'components/header/Header';
+import Footer from 'components/footer/Footer';
+import Timeline from 'components/timeline/Timeline';
+import PageDescription from 'components/subpage-description/PageDescription';
 import { data } from './Description';
 import styled from 'styled-components';
 

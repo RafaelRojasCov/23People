@@ -13,10 +13,24 @@ const StyledBox = styled.div`
 
 
 export default class PageDescription extends Component {
+	constructor(props){
+		super(props);
+		this.state = {
+			isVisible: false
+		}
+	}
+	
+	componentDidMount(){
+		setTimeout( () => {
+			this.setState({ isVisible: true });
+		}, 500)
+	}
+
 	render(){
 		const { title, content, subtitle, subcontent } = this.props;
+		const { isVisible } = this.state;
 		return(
-			<div className="container custom-blue">
+			<div className={`container custom-blue animated ${ isVisible ? "fadeIn" : "hidden"} `}>
 				<StyledBox>
 					<h3 className="text-center mx-auto mt-3 mb-5 w-75"> { title }</h3>
 					<p>{ content }</p>

@@ -3,7 +3,7 @@ export const cases = [
     id: 1,
     title: 'Reporte comercial HOUSEHOLD',
     logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/1/18/Equifax_Logo.svg/1280px-Equifax_Logo.svg.png',
-    description: 'Herramienta única en su naturaleza, que consiste en una suite de atributos analíticos. Permite perfilar a una persona respecto a su grupo familiar y sus características, logrando una mirada global de la persona y su entorno familiar, enriqueciendo así la toma de decisiones para tu negocio.',
+    description: 'Herramienta única en su naturaleza, que permite perfilar a una persona respecto a su grupo familiar y sus características, logrando una mirada global de la persona y su entorno familiar, enriqueciendo así la toma de decisiones para tu negocio.',
     url: '#',
     image: 'https://i.imgur.com/E3JCRMy.png',
     client: 'equifax'

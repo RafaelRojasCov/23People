@@ -9,6 +9,10 @@
 body{
 	margin-bottom: -8px;
 }
+
+.hidden{
+  visibility: hidden;
+}
 /*
 Hace girar lentamente como reloj
 .App-logo {

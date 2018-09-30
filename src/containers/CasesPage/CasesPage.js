@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Menu from '../../components/menu/Menu';
-import Contact from '../../components/contact/Contact';
-import Header from '../../components/header/Header';
-import Footer from '../../components/footer/Footer';
-import CasesList from '../../components/successfull-cases/CasesList';
+import Menu from 'components/menu/Menu';
+import Contact from 'components/contact/Contact';
+import Header from 'components/header/Header';
+import Footer from 'components/footer/Footer';
+import CasesList from 'components/successfull-cases/CasesList';
 import styled from 'styled-components';
 
 const StyledPage = styled.div`

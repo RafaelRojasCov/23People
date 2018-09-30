@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { PureComponent } from 'react'
 import styled from 'styled-components';
+import VisibilitySensor from 'react-visibility-sensor';
 
 const StyledCard = styled.div`
 	min-height: 300px;
@@ -10,11 +11,20 @@ const StyledCard = styled.div`
 `;
 
 const StyledLink = styled.a`
-	color: #2f2f2f;
+	background-color: #fac450;
 	text-decoration: none;
+	border: none;
+	color: white;
+	padding: 5px 8px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin-bottom: .8em;
 
-	&:hover{
-		color: #2f2f2f;
+	&:hover, :active, :focus{
+		background-color: #fac450;
+		color: white;
 		text-decoration: none;
 	}
 `;
@@ -38,28 +48,57 @@ const StyledImage = styled.div`
 	border-radius: .3em;
 `;
 
-const CasesCard = ({id, title, logo, description, url, image, client }) => {
-	return(
-		<StyledLink href={url} target="_blank" rel="noopener noreferrer">
-			<StyledCard className="container">
-				<div className="row">
-					<div className="col-xs-12 col-sm-12 col-md-12 col-lg">
-						<div className="text-center mb-3">
-							<StyledLogo src={logo} alt={client}/>
-							<h3>{title}</h3>
-						</div>
-						<p className="text-justify">{description}</p>
-					</div>
 
-					<div className="col-xs-12 col-sm-12 col-md-12 col-lg">
-						<StyledImage>
-							<img className="w-100" src={image} alt={title} />
-						</StyledImage>
-					</div>
-				</div>
-			</StyledCard>
-		</StyledLink>
-	);
+export default class CasesCard extends PureComponent {
+	constructor(props){
+		super(props);
+		this.state = {
+			isVisible: false,
+			isActive: true
+		}
+	}
+
+	handleVisibility = (e) => {
+		this.setState({ isVisible: e});
+	}
+
+	componentDidUpdate(){
+		this.state.isVisible &&
+		this.setState({ isActive: false });
+	}
+
+	render() {
+		const { title, logo, description, url, image, client } = this.props;
+		const { isVisible, isActive } = this.state;
+		return (
+			<VisibilitySensor 
+				onChange={this.handleVisibility}
+				active={ isActive }
+				delayedCall="true"
+			>
+				{
+					<StyledCard className={`container animated ${isVisible ? "fadeIn" : "hidden"}`}
+						visibility={isVisible ? "visible" : "hidden"}>
+							<div className="row">
+								<div className="col-xs-12 col-sm-12 col-md-12 col-lg">
+									<div className="text-center mb-3">
+										<StyledLogo src={logo} alt={client}/>
+										<h4>{title}</h4>
+									</div>
+									<p className="text-justify">{description}</p>
+									<StyledLink href={url} target="_blank" rel="noopener noreferrer">
+										Más información</StyledLink>
+								</div>
+								<div className="col-xs-12 col-sm-12 col-md-12 col-lg">
+									<StyledImage>
+										<img className="w-100" src={image} alt={title} />
+									</StyledImage>
+								</div>
+							</div>
+						</StyledCard>
+					
+				}
+			</VisibilitySensor>
+		)
+	}
 }
-
-export default CasesCard;

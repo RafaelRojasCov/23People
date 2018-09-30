@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components';
+import VisibilitySensor from 'react-visibility-sensor';
 
 const StyledCard = styled.div`
 	display: flex;
@@ -27,16 +28,35 @@ const StyledPhoto = styled.div`
 
 
 export default class TeamCard extends Component {
+	constructor(props){
+		super(props);
+		this.state = {
+			isVisible: false,
+			isActive: true
+		}
+	}
+
+	handleVisibility = () => (e) => {
+		this.setState({ isVisible: e, isActive: false})
+	}
+
+	componentDidMount(){
+		this.setState({ isActive: true })
+	}
+	
 	render(){
 		const { photo, name, position } = this.props;
+		const { isVisible, isActive } = this.state;
 		return(
-			<StyledCard className="text-center custom-blue rounded">
-				<StyledPhoto className="rounded-top" background={photo} />
-				<StyledText className="rounded-bottom">
-					<h5>{name}</h5>
-					<span>{position}</span>
-					</StyledText>
-			</StyledCard>
+			<VisibilitySensor onChange={(e) => this.handleVisibility()(e)} active={ isActive }>
+				<StyledCard className={`text-center custom-blue rounded animated ${ isVisible ? "fadeIn" : "fadeOut"}`}>
+					<StyledPhoto className="rounded-top" background={photo} />
+					<StyledText className="rounded-bottom">
+						<h5>{name}</h5>
+						<span>{position}</span>
+						</StyledText>
+				</StyledCard>
+			</VisibilitySensor>
 		);
 	}
 }
