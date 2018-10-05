@@ -5,6 +5,7 @@ export const comments = [
     logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/1/18/Equifax_Logo.svg/1280px-Equifax_Logo.svg.png',
     name: 'Juan Perez Soto',
     position: 'Director de Tecnología',
+    photo: 'http://innovate.unc.edu/wp-content/uploads/2012/10/Screen-Shot-2016-11-02-at-12.03.34-PM.png',
     alt: 'Equifax'
   },
   {
@@ -13,6 +14,7 @@ export const comments = [
     logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/1/18/Equifax_Logo.svg/1280px-Equifax_Logo.svg.png',
     name: 'Juan Perez Soto',
     position: 'Director de Seguridad',
+    photo: 'https://www.geklaw.com/images/adam-dombchik-attorney.jpg',
     alt: 'Equifax'
   },
   {
@@ -21,6 +23,7 @@ export const comments = [
     logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/1/18/Equifax_Logo.svg/1280px-Equifax_Logo.svg.png',
     name: 'Juan Perez Soto',
     position: 'Director de Recursos Humanos',
+    photo: 'https://www.geklaw.com/images/adam-dombchik-attorney.jpg',
     alt: 'Equifax'
   }
 ];
