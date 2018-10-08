@@ -14,7 +14,7 @@ export default class App extends Component {
   render() {
     const browserHistory = createBrowserHistory();
     return (
-      <Router history={browserHistory}>
+      <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
         <Switch>
           <Route exact path='/' component={Main}/>
           <Route path='/successfull-cases/' component={CasesPage}/>

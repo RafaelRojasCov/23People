@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import './style.css';
+import VisibilitySensor from 'react-visibility-sensor';
 
 const StyledCard = styled.div`
 	display:flex;
-	justify-content: center;
+	justify-content: flex-start;
+	flex-direction: column;
   background: ${props => props.background};
 `;
 
@@ -15,18 +17,34 @@ const StyledButton = styled.button`
   border: solid 1px;
 `;
 
-const Card = ({id, title, description, url, background}) => {
+export default class Card extends Component {
+	constructor(props){
+		super(props);
+		this.state = {
+			isVisible: false,
+			isActive: true
+		}
+	}
 
+	handleVisibility = (e) => {
+		this.setState({ isVisible: e, isActive: false });
+	}
+
+	componentDidMount(){
+		this.setState({ isActive: true });
+	}
+
+	render(){
+		const { title, description, url, background } = this.props;
+		const { isVisible, isActive } = this.state;
 		return(
-			<StyledCard background={background} className="card-service">
-				<div>
+			<VisibilitySensor onChange={this.handleVisibility} active={isActive}>
+				<StyledCard background={background} className={`card-service animated ${ isVisible ? "fadeIn" : "fadeOut"}`}>
 					<h2> {title} </h2>
 					<p className="mb-5 mt-4">{description}</p>
 					<a href={url} ><StyledButton className="btn btn-light btn-sm"> Más información </StyledButton></a>
-				</div>
-			</StyledCard>
+				</StyledCard>
+			</VisibilitySensor>
 		);
-
+	}
 }
-
-export default Card;

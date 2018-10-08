@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components';
+import VisibilitySensor from 'react-visibility-sensor';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const StyledCard = styled.div`
@@ -16,7 +17,6 @@ const StyledCard = styled.div`
 	transition: background-color 0.4s ease;
 
 	&:hover{
-		cursor: pointer;
 		background-color: #DEAE47;
 		transition: background-color 0.4s ease;
 	}
@@ -29,14 +29,33 @@ const StyledText = styled.span`
 
 
 export default class MarketCard extends Component {
+	constructor(props){
+		super(props);
+		this.state = {
+			isVisible: false,
+			isActive: true
+		}
+	}
+
+	handleVisibility = (e) => {
+		this.setState({ isVisible: e, isActive: false});
+	}
+
+	componentDidMount(){
+		this.setState({ isActive: true })
+	}
+
 	render(){
 		const { icon, title } = this.props;
+		const { isVisible, isActive } = this.state;
 		const faLogo = Object.values(icon)[0];
 		return(
-			<StyledCard className="text-center">
-				<span><FontAwesomeIcon size="3x" icon={Object.values({faLogo})[0]} /></span>
-				<StyledText>{title}</StyledText>
-			</StyledCard>
+			<VisibilitySensor onChange={this.handleVisibility} active={isActive}>
+				<StyledCard className={`text-center animated ${ isVisible ? "fadeIn" : "fadeOut"}`}>
+					<span><FontAwesomeIcon size="3x" icon={Object.values({faLogo})[0]} /></span>
+					<StyledText>{title}</StyledText>
+				</StyledCard>
+			</VisibilitySensor>
 		);
 	}
 }

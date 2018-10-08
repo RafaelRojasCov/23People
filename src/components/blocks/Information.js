@@ -5,6 +5,7 @@ import { data } from './data';
 
 const StyledContainer = styled.div`
 	min-height: 768px;
+	background: #37454E;
 `;
 
 export default class Information extends Component {

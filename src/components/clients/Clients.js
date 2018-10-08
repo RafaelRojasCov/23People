@@ -16,17 +16,19 @@ const StyledContainer = styled.div`
 export default class Clients extends Component {
   render(){
     return(
-      <div className="container mt-5 mb-5">
-        <StyledContainer>
+      <div className="container mt-5 pb-5">
+        <StyledContainer >
           {
             data.map(( el, i ) => {
-                return <ClientCard
+                return (
+                  <ClientCard
                     key={i}
                     src={el.src} 
                     alt={el.alt}
                     url={el.url}
                   />
-              })
+                ); 
+            })
           }
         </StyledContainer>
       </div>

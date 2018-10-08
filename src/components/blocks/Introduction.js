@@ -7,7 +7,7 @@ const StyledBlock = styled.div`
   align-items: center;
   min-height: 400px;
   width: 100%;
-  margin-top: -80px;
+  margin-top: -79px;
   padding-top: 80px;
   background: 
   	linear-gradient(

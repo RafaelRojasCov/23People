@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
-
+import VisibilitySensor from 'react-visibility-sensor';
 
 const Link = styled.a`
 	min-height: 100%;
@@ -32,15 +32,35 @@ const StyledDescription = styled.div`
 	margin-top: 2em;
 `;
 
-const Activity = ({ id, logo, description, url, name, title }) => {
+export default class Activity extends Component{
+	constructor(props){
+		super(props);
+		this.state = {
+			isVisible: false,
+			isActive: true
+		}
+	}
 
-	return(
-		<Link className="col-sm-6 col-md-4" href={ url }>
-			<StyledLogo src={ logo } alt={ name } />
-			<StyledDescription> <h5>{ title }</h5> <p>{ description }</p></StyledDescription>
-		</Link>
-	);
+	handleVisibility = (e) => {
+		this.setState({ isVisible: e, isActive: false});
+	}
+
+	componentDidMount(){
+		this.setState({ isActive: true });
+	}
+
+	render(){
+		const { logo, description, url, name, title } = this.props;
+		const { isVisible, isActive } = this.state;
+
+		return(
+			<VisibilitySensor onChange={this.handleVisibility} active={isActive}>
+				<Link className={`col-sm-6 col-md-4 animated ${ isVisible ? "fadeIn" : "fadeOut"}`} href={ url }>
+					<StyledLogo src={ logo } alt={ name } />
+					<StyledDescription> <h5>{ title }</h5> <p>{ description }</p></StyledDescription>
+				</Link>
+			</VisibilitySensor>
+		);
+	}
 
 }
-
-export default Activity;
