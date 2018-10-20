@@ -1,0 +1,98 @@
+<svg id="Grupo_7" data-name="Grupo 7" xmlns="http://www.w3.org/2000/svg" width="821" height="430" viewBox="0 0 821 430">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #c40e1d;
+      }
+
+      .cls-1, .cls-3, .cls-5, .cls-6, .cls-7 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2, .cls-8 {
+        font-size: 35px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-4, .cls-8 {
+        font-family: Arial;
+      }
+
+      .cls-4 {
+        font-size: 12px;
+      }
+
+      .cls-5 {
+        fill: #910931;
+      }
+
+      .cls-6 {
+        fill: #1b4d70;
+      }
+
+      .cls-7 {
+        fill: #3aaacf;
+      }
+
+      .cls-8 {
+        fill: #405675;
+      }
+    </style>
+  </defs>
+  <g id="Grupo_4" data-name="Grupo 4">
+    <path id="Forma_5" data-name="Forma 5" class="cls-1" d="M793,385.825s-1.609-77.816-28.235-139.739c-27.4-63.719-79.836-113.538-79.836-113.538L527.2,290.725s18.248,20,28.235,44.639c9.472,23.365,10.71,51.431,10.71,51.431Z"/>
+    <text id="Go_Lang" data-name="Go Lang" class="cls-2" x="593" y="265">Go Lang</text>
+    <path id="Linea_5" data-name="Linea 5" class="cls-3" d="M595,281v-2H750v2H595Z"/>
+    <text id="Revel_MGo_Iris_Http_Router" data-name="Revel, MGo, Iris, Http Router" class="cls-4" x="595" y="315">Revel, MGo, Iris, Http Router</text>
+  </g>
+  <g id="Grupo_3" data-name="Grupo 3">
+    <path id="Forma_4" data-name="Forma 4" class="cls-5" d="M420.965,11S498.9,12.606,560.913,39.193C624.727,66.55,674.62,118.909,674.62,118.909L516.207,276.4s-20.032-18.221-44.706-28.193c-23.4-9.457-51.508-10.694-51.508-10.694Z"/>
+    <text id="_.Net" data-name=".Net" class="cls-2" x="451" y="85">.Net</text>
+    <path id="Linea_4" data-name="Linea 4" class="cls-3" d="M433,101V99H588v2H433Z"/>
+    <text id="ASP_.Net_MVC_Entity_Framework_.Net_Core" data-name="ASP .Net MVC, Entity Framework, .Net Core" class="cls-4" x="433" y="120">ASP .Net MVC, Entity<tspan x="433" dy="14.4">Framework, .Net Core</tspan></text>
+  </g>
+  <g id="Grupo_2" data-name="Grupo 2">
+    <path id="Forma_3" data-name="Forma 3" class="cls-6" d="M401.152,11S323.22,12.606,261.2,39.193C197.39,66.55,147.5,118.909,147.5,118.909L305.91,276.4s20.032-18.221,44.7-28.193c23.4-9.457,51.509-10.694,51.509-10.694Z"/>
+    <text id="Java" class="cls-2" x="274" y="85">Java</text>
+    <path id="Linea_3" data-name="Linea 3" class="cls-3" d="M233,101V99H388v2H233Z"/>
+    <text id="Spring_MVC_Spring_Security_Spring_Boot_Spring_Core_JBoss_J" data-name="Spring MVC, Spring Security, Spring Boot, Spring Core, JBoss, J" class="cls-4" x="233" y="120">Spring MVC, Spring Security,<tspan x="233" dy="14.4">Spring Boot, Spring Core,</tspan><tspan x="233" dy="14.4">JBoss, JAX-RX,JPA,JSF,</tspan><tspan x="233" dy="14.4">J2EE, Tomcat, WebSphere,</tspan><tspan x="233" dy="14.4">Maven</tspan></text>
+  </g>
+  <g id="Grupo_1" data-name="Grupo 1">
+    <path id="Forma_2" data-name="Forma 2" class="cls-7" d="M132.274,132.4S78.388,188.637,53.455,251.259C27.8,315.7,29.7,387.946,29.7,387.946l223.543-.813s1.222-27.029,11.571-51.517c9.815-23.223,28.785-43.971,28.785-43.971Z"/>
+    <text id="NodeJS" class="cls-2" x="83" y="265">NodeJS</text>
+    <path id="Linea_2" data-name="Linea 2" class="cls-3" d="M83,281v-2H238v2H83Z"/>
+    <text id="Express_PassportJS_Electron_NW.js_Socket.io_PhantomJS" data-name="Express, PassportJS, Electron, NW.js, Socket.io, PhantomJS" class="cls-4" x="82" y="315">Express, PassportJS,<tspan x="82" dy="14.4">Electron, NW.js, Socket.io,</tspan><tspan x="82" dy="14.4">PhantomJS</tspan></text>
+  </g>
+  <text id="Frameworks_Languages" data-name="Frameworks &amp; Languages" class="cls-8" x="301" y="369">Frameworks &amp;<tspan x="301" dy="42">Languages</tspan></text>
+</svg>
