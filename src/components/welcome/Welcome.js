@@ -7,7 +7,7 @@ export default class Welcome extends Component {
   render() {
     return (
       <div>
-				<video poster="https://i.imgur.com/70bvcVM.png" id="welcomeVideo" loop="true" autoPlay="autoPlay" muted>
+				<video poster="https://i.imgur.com/70bvcVM.png" id="welcomeVideo" loop={true} autoPlay="autoPlay" muted>
 			    <source src="https://i.imgur.com/44JnDfC.mp4" type="video/mp4" />
 			    <img 
 			    	alt="Background"

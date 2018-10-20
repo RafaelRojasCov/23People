@@ -74,7 +74,7 @@ export default class CasesCard extends PureComponent {
 			<VisibilitySensor 
 				onChange={this.handleVisibility}
 				active={ isActive }
-				delayedCall="true"
+				delayedCall={true}
 			>
 				{
 					<StyledCard className={`container animated ${isVisible ? "fadeIn" : "hidden"}`}
